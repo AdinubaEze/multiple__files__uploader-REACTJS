@@ -1,0 +1,127 @@
+.file__uploader__container{
+    background: #202427;
+    padding: 40px 30px;
+    border-radius: 41px;
+    color: white;
+    box-shadow:0 0 20px 0 rgb(112 121 138 / 18%);
+    margin: auto;
+    margin-top: 40px;
+    max-width: 550px;
+}
+
+
+
+
+/* top */
+.file__uploader__container >.top{
+    padding: 5px 0;
+}
+
+
+/* Middle */
+.file__uploader__container>.middle{
+    padding-top: 30px;
+}
+
+.file__uploader__container>.middle>.file__drop__area{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: #363636;
+    border: dashed 1px #5a5a5a;
+    border-radius: 21px;
+    padding:40px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+}
+.file__uploader__container>.middle>.file__drop__area:hover{
+    background: #2c2b2b;
+    border-color: #4e4d4d;
+}
+
+.file__uploader__container>.middle>.file__drop__area>.icon{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.file__uploader__container>.middle>.file__drop__area>input{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+    top: -9999;
+}
+
+/* Preview area */
+.file__uploader__container>.middle>.preview__area{
+    margin: 20px 0;
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.file__uploader__container>.middle>.preview__area>
+.preview__card{
+    background: #363636;
+    border: solid 1px #5a5a5a;
+    padding: 10px 20px;
+    border-radius: 21px;
+    margin: 10px 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.file__uploader__container>.middle>.preview__area>
+.preview__card>.column.avater{
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    min-height: 45px;
+    max-width: 45px;
+    max-height: 45px;
+    background: #202427;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.file__uploader__container>.middle>.preview__area>
+.preview__card>.column.last{
+    margin-left: auto;
+}
+
+.file__uploader__container>.middle>.preview__area>
+.preview__card>.column.last>.cancel__icon{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fc5255;
+    cursor: pointer;
+}
+
+.file__uploader__container>.middle>.preview__area>
+.preview__card>.column>.name{
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+
+
+
+
+
+/* Bottom */
+
+.file__uploader__container>.bottom{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.file__uploader__container>.bottom>button{
+    display: block;
+    width: 100%;
+}
